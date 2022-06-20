@@ -1,7 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
 
+function isPalindrome(word) {
+  const wordLength = word.length;
+  for (let i = 0; i < wordLength; i++) {
+    if(word[i]!==word[word.length - 1-i]){
+      return "the word is not  a palindrome";
+    }
+  }
+  return "the word is a palindrome";
+}
+const chechWord= isPalindrome(word);
+// // console.log(chechWord);
+}
 /* 
   Add your pseudocode here
 */
